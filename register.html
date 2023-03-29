@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bank Application Registration</title>
+	<script src = "script.js"></script>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		h2 , div{
+			text-align: center;
+			color: #666666;
+		}
+		
+		form {
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 50px;
+			background-color: #ffffff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px #666666;
+		}
+		
+		label {
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			color: #333333;
+			margin-bottom: 5px;
+		}
+		
+		input[type="text"], [type="text"],
+		 input[type="email"], input[type="phone"], input[type="date"], textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		
+		input[type="submit"] {
+			background-color: #008CBA;
+			color: #ffffff;
+			border: none;
+			border-radius: 3px;
+			padding: 10px 20px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #006699;
+		}
+	</style>
+</head>
+<body>
+	<h2>Registration Form</h2>
+	<form class="Table" name = "myform" >
+		<label for="firstname">Firstname:</label>
+		<input  type="text"  id="firstname" required>
+		<label for="firstname">Laststname:</label>
+		<input  type="text"  id="laststname"  required>
+		<label for="email">Email:</label>
+		<input  type="email"  id="email"  required>
+		<label for="phone">Phone Number:</label>
+		<input type="phone"  id="phone"  required>
+		<label for = "dob">Date of birth</label>
+		<input  type="date"  id="dob"  required>	
+		<label for="address">Address:</label>
+		<textarea  id="address" rows="4" cols="30"  required></textarea>
+		
+		<div>
+			<input class = "Table" type = "submit"  name = "done" onClick = 'validate()'> <br><br>
+			<input class = "Table" type = "reset"  name = "clear">
+		</div>
+	</form>
+</body>
+</html>
+
+
+
